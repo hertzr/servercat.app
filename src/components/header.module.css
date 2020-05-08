@@ -9,6 +9,11 @@
   justify-content: space-between;
 }
 
+.headerNav a{
+  text-decoration: none;
+  font-family: Menlo;
+}
+
 .branding {
   font-size: 1rem;
   margin: 0;
