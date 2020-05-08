@@ -3,10 +3,23 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+:root {
+  --background-color: #000;
+  --secondary-background-color: #222;
+  --primary-color: #fff;
+  --secondary-color: #888;
+  --accent-color: orange;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.5rem;
 }
 article,
 aside,
@@ -42,6 +55,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: var(--accent-color);
 }
 a:active,
 a:hover {
@@ -199,7 +213,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  /*color: hsla(0, 0%, 0%, 0.8);*/
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -235,7 +249,6 @@ h1 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
-  line-height: 1.1;
 }
 h2 {
   margin-left: 0;
@@ -252,7 +265,6 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
-  line-height: 1.1;
 }
 h3 {
   margin-left: 0;
@@ -269,7 +281,6 @@ h3 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
-  line-height: 1.1;
 }
 h4 {
   margin-left: 0;
@@ -286,7 +297,6 @@ h4 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
-  line-height: 1.1;
 }
 h5 {
   margin-left: 0;
@@ -303,7 +313,6 @@ h5 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
-  line-height: 1.1;
 }
 h6 {
   margin-left: 0;
@@ -320,7 +329,6 @@ h6 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
-  line-height: 1.1;
 }
 hgroup {
   margin-left: 0;
