@@ -11,7 +11,9 @@
 
 .headerNav a{
   text-decoration: none;
-  font-family: Menlo;
+  font-family: var(--monospace-font);
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .branding {
