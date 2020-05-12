@@ -58,8 +58,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          'Roboto',
           `DM Mono`,
-          'Open Sans',
         ],
         display: 'swap'
       }

@@ -10,7 +10,11 @@ const IndexPage = () => (
     <SEO title="Home" />
     <br/>
     <h1>ServerCat</h1>
-    <p>Server Status, Docker Management and SSH client</p>
+    <p>
+      <code>
+        Server Status, Docker Management and SSH client
+      </code>
+    </p>
     <br/>
     <article>
       <hr/>
