@@ -1,0 +1,24 @@
+.h2 {
+  margin: 2rem 0 1rem;
+  font-size: 1rem;
+}
+
+.slogan {
+  font-family: var(--monospace-font);
+}
+
+.previews {
+  padding: 0 0 1rem;
+  /*background-color: var(--secondary-background-color);*/
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.previews img {
+  border-radius: 1rem;
+  margin: 0 0.5rem 0 0;
+  width: 230px;
+  height: 497px;
+}
