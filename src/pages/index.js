@@ -13,7 +13,7 @@ import QRCode from "react-qr-code"
 const appStoreUrl = "https://apps.apple.com/us/app/servercat/id1501532023&ct=website"
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home"/>
+    <SEO title="ServerCat - Server status and SSH client for iOS"/>
     <br/>
 
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
