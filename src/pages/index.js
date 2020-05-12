@@ -16,6 +16,15 @@ const IndexPage = () => (
     <p className={styles.slogan}>
       > Server Status, Docker Management and SSH client.
     </p>
+    <div className={styles.download}>
+      <a href="https://apps.apple.com/us/app/servercat/id1501532023" target="_blank">
+        <img height={40} src={require("../images/appstore.png")} alt=""/>
+      </a>
+      <small className={styles.downloadTip}>
+        It's Free
+      </small>
+    </div>
+    <hr className={styles.hr}/>
     <h2 className={styles.h2}>Screenshots</h2>
     <div className={styles.previews}>
       <img
@@ -34,6 +43,7 @@ const IndexPage = () => (
         src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/46/f1/04/46f104c8-ea37-b8ac-f2ba-61f6d42e1bf9/pr_source.png/600x0w.png"/>
     </div>
 
+    <hr className={styles.hr}/>
     <article>
       <h2 className={styles.h2}>FAQ</h2>
       <h3>ServerCat 是如何工作的，会在服务器上安装程序吗？</h3>

@@ -3,8 +3,29 @@
   font-size: 1rem;
 }
 
+.hr {
+  margin: 2rem 0;
+  background-color: var(--secondary-color);
+}
+
 .slogan {
   font-family: var(--monospace-font);
+}
+
+.download {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+
+.download a img{
+  margin: 0
+}
+
+.downloadTip {
+  margin-left: 1rem;
+  color: var(--secondary-color);
 }
 
 .previews {
