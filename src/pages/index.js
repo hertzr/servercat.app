@@ -7,24 +7,46 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import styles from "../components/index.module.css"
+import QRCode from "react-qr-code"
 
+
+const appStoreUrl = "https://apps.apple.com/us/app/servercat/id1501532023&ct=website"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
     <br/>
-    <h1 style={{letterSpacing: 1}}>ServerCat</h1>
-    <p className={styles.slogan}>
-      > Server Status, Docker Management and SSH client.
-    </p>
-    <div className={styles.download}>
-      <a href="https://apps.apple.com/us/app/servercat/id1501532023" target="_blank">
-        <img height={40} src={require("../images/appstore.png")} alt=""/>
-      </a>
-      <small className={styles.downloadTip}>
-        It's Free
-      </small>
+
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div>
+        <h1 style={{ letterSpacing: 1 }}>ServerCat</h1>
+        <p className={styles.slogan}>
+          > Server Status, Docker Management and SSH client.
+        </p>
+      </div>
+      <img width={100}
+           style={{ borderRadius: 25, marginRight: "1rem" }}
+           // src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.png"
+           src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/230x0w.png"
+           alt=""/>
     </div>
-    <hr className={styles.hr}/>
+
+    <div className={styles.download}>
+      <div>
+        <a style={{ height: 40, display: "inline-block", marginBottom: 10 }} href={appStoreUrl} target="_blank">
+          <img height={40} src={require("../images/appstore.png")} alt=""/>
+        </a>
+        <br/>
+
+        <small className={styles.downloadTip}> Free Download </small>
+      </div>
+      &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;
+      <div>
+        <QRCode value={appStoreUrl} size={80} style={{ justifySelf: "flex-end" }}/>
+      </div>
+    </div>
+
+    {/*<hr className={styles.hr}/>*/}
     <h2 className={styles.h2}>Screenshots</h2>
     <div className={styles.previews}>
       <img
@@ -43,7 +65,7 @@ const IndexPage = () => (
         src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/46/f1/04/46f104c8-ea37-b8ac-f2ba-61f6d42e1bf9/pr_source.png/600x0w.png"/>
     </div>
 
-    <hr className={styles.hr}/>
+    {/*<hr className={styles.hr}/>*/}
     <article>
       <h2 className={styles.h2}>FAQ</h2>
       <h3>ServerCat 是如何工作的，会在服务器上安装程序吗？</h3>

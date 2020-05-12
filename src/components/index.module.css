@@ -16,15 +16,15 @@
   height: 40px;
   display: flex;
   align-items: center;
+  margin: 2rem 0 4rem;
 }
-
 
 .download a img{
   margin: 0
 }
 
 .downloadTip {
-  margin-left: 1rem;
+  /*margin-left: 1rem;*/
   color: var(--secondary-color);
 }
 
