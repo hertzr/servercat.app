@@ -20,13 +20,13 @@ module.exports = {
         path: `${__dirname}/docs`
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-images`,
-        path: `${__dirname}/docs/images`
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `markdown-images`,
+    //     path: `${__dirname}/docs/images`
+    //   }
+    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     // `gatsby-transformer-remark`,
