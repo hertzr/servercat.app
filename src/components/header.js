@@ -8,12 +8,13 @@ const Header = ({ siteTitle }) => (
   <div
     className={styles.newHeader}
     style={{
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    maxWidth: 960,
-    margin: "1rem auto"
-  }}>
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      maxWidth: 960,
+      margin: "1rem auto",
+      padding: "0 1rem"
+    }}>
     <Link to={"/"}>
       <img width={40}
            style={{ borderRadius: 10, marginRight: "1rem" }}
