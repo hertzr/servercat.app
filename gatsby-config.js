@@ -20,32 +20,32 @@ module.exports = {
         path: `${__dirname}/docs`
       }
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `markdown-images`,
-    //     path: `${__dirname}/docs/images`
-    //   }
-    // },
     {
-        resolve: `gatsby-transformer-remark`,
-        options: {
-          plugins: [
-            {
-              resolve: `gatsby-remark-images`,
-              options: {
-                // It's important to specify the maxWidth (in pixels) of
-                // the content container as this plugin uses this as the
-                // base for generating different widths of each image.
-                maxWidth: 590,
-              },
-            },
-          ],
-        },
-      },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-images`,
+        path: `${__dirname}/docs/images`
+      }
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    // `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -58,25 +58,6 @@ module.exports = {
         icon: `src/images/icon.png` // This path is relative to the root of the site.
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Futura PT`,
-    //         subsets: [`latin`],
-    //       }
-    //     ],
-    //   },
-    // },
-    // {
-    //   resolve: 'gatsby-plugin-web-font-loader',
-    //   options: {
-    //     google: {
-    //       families: ['Futura PT']
-    //     }
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
