@@ -14,20 +14,14 @@ const appStoreUrl = "https://apps.apple.com/us/app/servercat/id1501532023&ct=web
 const IndexPage = () => (
   <Layout>
     <SEO title="ServerCat - Server status and SSH client for iOS"/>
+
     <br/>
 
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-      <div>
-        <h1 style={{ letterSpacing: 1 }}>ServerCat</h1>
-        <p className={styles.slogan}>
-          > Server Status, Docker Management and SSH client.
-        </p>
-      </div>
-      <img width={100}
-           style={{ borderRadius: 25, marginRight: "1rem" }}
-           // src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.png"
-           src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/230x0w.png"
-           alt=""/>
+    <div>
+      <h1 style={{ letterSpacing: 1, marginBottom: "1rem"}}>ServerCat</h1>
+      <p className={styles.slogan}>
+        > Server Status, Docker Management and SSH client.
+      </p>
     </div>
 
     <div className={styles.download}>
@@ -73,8 +67,14 @@ const IndexPage = () => (
         ServerCat 通过 SSH 直接读取 Linux 的 <code>/proc</code> 文件系统来获得系统的运行状态。
         不依赖任何第三方工具，也不会在服务器上残留任何文件。
       </p>
+      <h3>为何无法显示 macOS/FreeBSD/*** 的运行状态？</h3>
+      <p>
+        ServerCat 大部分数据依赖 Linux 内核的 <code>/proc</code> 子系统，在其它平台上由于没有同类的内核统计机制，暂时无法显示所有指标。
+      </p>
+
       <h3>我的数据安全吗？</h3>
-      <p>数据保存在本地的 App 沙盒中，敏感信息（Key 和 密码）会经 AES 加密保存。
+      <p>
+        数据保存在本地的 App 沙盒中，敏感信息（Key 和 密码）会经 AES 加密保存。
       </p>
       <h3>数据同步安全吗？</h3>
       <p> 数据同步使用 Apple iCloud 的服务，数据（敏感信息同样会经过 AES 加密）直接传到 iCloud 服务器上，不会经过任何第三方服务器。</p>
