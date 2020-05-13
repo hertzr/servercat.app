@@ -5,7 +5,9 @@ import styles from "./header.module.css"
 import Layout from "./layout"
 
 const Header = ({ siteTitle }) => (
-  <div style={{
+  <div
+    className={styles.newHeader}
+    style={{
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -13,16 +15,19 @@ const Header = ({ siteTitle }) => (
     margin: "1rem auto"
   }}>
     <Link to={"/"}>
-
-    <img width={40}
-         style={{ borderRadius: 10, marginRight: "1rem" }}
-      // src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.png"
-         src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/230x0w.png"
-         alt=""/>
+      <img width={40}
+           style={{ borderRadius: 10, marginRight: "1rem" }}
+        // src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/460x0w.png"
+           src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/01/f5/d2/01f5d200-68d1-7734-a01d-945830405327/AppIcon-1x_U007emarketing-0-7-0-85-220.png/230x0w.png"
+           alt=""/>
     </Link>
 
-    <Link to={"/docs"}>
+    <Link to={"/zh/docs"}>
       Docs
+    </Link>
+
+    <Link to={"/zh/faq"}>
+      FAQ
     </Link>
   </div>
   // <header

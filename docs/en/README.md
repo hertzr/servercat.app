@@ -1,9 +1,8 @@
 ---
-path: "/docs"
+path: "/en/docs"
 date: "2019-05-04"
-title: "ServerCat 文档"
+title: "文档"
 ---
-
 
 ## 目录
 
